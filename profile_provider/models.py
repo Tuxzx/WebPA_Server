@@ -9,3 +9,9 @@ class Person(models.Model):
     ability = models.TextField()
     weakness = models.TextField()
     extend = models.TextField()
+
+class MessageBoard(models.Model):
+    nickname = models.CharField(max_length=30)
+    titleid = models.IntegerField()
+    message = models.TextField()
+    time = models.DateField()
