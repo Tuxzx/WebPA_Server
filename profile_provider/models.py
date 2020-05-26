@@ -1,3 +1,10 @@
 from django.db import models
 
-# Create your models here.
+class Person(models.Model):
+    name = models.CharField(max_length=30)
+    introduction = models.TextField()
+    looks = models.TextField()
+    character = models.TextField()
+    ability = models.TextField()
+    weakness = models.TextField()
+    extend = models.TextField()
